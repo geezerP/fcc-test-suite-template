@@ -2,6 +2,23 @@ body {
   background-color: #eeeeee;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  
+  background-color: White;
+}
+
+.flex-container > div {
+  background-color: #ffffff;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+
 #header {
 
 }
