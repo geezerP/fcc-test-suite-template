@@ -1,0 +1,21 @@
+body {
+  background-color: #eeeeee;
+}
+
+#header {
+
+}
+
+#header-img {
+    width: 300px;
+}
+
+#nav-bar {
+  float: right;
+}
+
+@media(max-width: 1200px) {
+body {
+  background-color: red;
+}
+}
