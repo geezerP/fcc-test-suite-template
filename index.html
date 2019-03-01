@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta charset="utf-8">
-
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -11,77 +10,126 @@
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
     <header id="header">
-      <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="" id="header-img">
-        <nav id="nav-bar">
-            <a class="nav-link active" href="#elm1">Features</a>
-            <a class="nav-link" href="#elm2">How It Works</a>
-            <a class="nav-link" href="#elm3">Pricing</a>
-        </nav>
+      <nav id="nav-bar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="" id="header-img"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#howorks">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
-	    <form action="https://www.freecodecamp.com/email-submit" id="form">
-	      <input id="email" type="email" name="email" placeholder="email" justify="flex-container">
-	      <div>
-	      		<input id ="submit" type="GET STARTED"  />
-	      
-	      </div>
-	    </form>
-    	
-		    
-		    	<iframe src="https://www.youtube.com/embed/y8Yv4pnO7qc" 	frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			
+    <br><br><br><br><br><br>
+
+    <section id="form-section">
+      <h2>Handcrafted, home-made masterpieces</h2>
+      <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+        <div>
+          <input id="email" type="email" name="email" placeholder="email" justify="flex-container">
+        </div>
+        <br>
+        <div>
+          <input class="btn btn-primary" id="submit" type="submit" value="GET STARTED"  />
+        </div>
+      </form>
+    </section>
+
+    <section id="features">
+      <div class="container">
+
+        <div class="grid">
+          <div class="desc">
+            <h2>Premium Materials</h2>
+            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="desc">
+            <h2>Fast Shipping</h2>
+            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="desc">
+            <h2>Quality Assurance</h2>
+            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="howorks">
+        <iframe id="video" width="500" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+    </section>
 
 
-			<div class="container">
-			  <div class="card-deck mb-3 text-center">
-			    <div class="card mb-4 shadow-sm">
-			      <div class="card-header">
-			        <h4 class="my-0 font-weight-normal">Tenor Trombone</h4>
-			      </div>
-			      <div class="card-body">
-			        <h1 class="card-title pricing-card-title">$600</h1>
-			        <ul class="list-unstyled mt-3 mb-4">
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum dolor</li>
-			          <li>Lorem Ipsum</li>
-			        </ul>
-			        <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
-			      </div>
-			    </div>
-			    <div class="card mb-4 shadow-sm">
-			      <div class="card-header">
-			        <h4 class="my-0 font-weight-normal">Bass Trombone</h4>
-			      </div>
-			      <div class="card-body">
-			        <h1 class="card-title pricing-card-title">$900 </h1>
-			        <ul class="list-unstyled mt-3 mb-4">
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum dolor</li>
-			          <li>Lorem Ipsum</li>
-			        </ul>
-			        <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
-			      </div>
-			    </div>
-			    <div class="card mb-4 shadow-sm">
-			      <div class="card-header">
-			        <h4 class="my-0 font-weight-normal">Valve Trombone</h4>
-			      </div>
-			      <div class="card-body">
-			        <h1 class="card-title pricing-card-title">$1900 </h1>
-			        <ul class="list-unstyled mt-3 mb-4">
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum</li>
-			          <li>Lorem Ipsum dolor</li>
-			          <li>Lorem Ipsum</li>
-			        </ul>
-			        <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
-			      </div>
-			    </div>
-			  </div>
+
+      <section id="pricing">
+
+        <div class="container">
+          <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Tenor Trombone</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$600</h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum dolor</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
+              </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Bass Trombone</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$900 </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum dolor</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
+              </div>
+            </div>
+            <div class="card mb-4 shadow-sm">
+              <div class="card-header">
+                <h4 class="my-0 font-weight-normal">Valve Trombone</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">$1900 </h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum</li>
+                  <li>Lorem Ipsum dolor</li>
+                  <li>Lorem Ipsum</li>
+                </ul>
+                <button type="button" class="btn btn-lg btn-block btn-primary">Select</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 	<script  src="js/index.js"></script>
-    
+
   </body>
 </html>
